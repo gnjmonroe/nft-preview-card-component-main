@@ -1,0 +1,65 @@
+@use "../abstracts/variables.scss";
+
+.outfit-300 {
+  font: {
+    family: variables.$outfit;
+    weight: 300;
+  }
+}
+.outfit-400 {
+  font: {
+    family: variables.$outfit;
+    weight: 400;
+  }
+}
+.outfit-600 {
+  font: {
+    family: variables.$outfit;
+    weight: 600;
+  }
+}
+
+h1 {
+  font-size: 22px;
+  color: variables.$neutral_white;
+  margin-top: 21px;
+  &:hover {
+    color: variables.$primary_2;
+  }
+}
+
+p {
+  font-size: 16px;
+  color: variables.$primary_1;
+
+  &.desc {
+    margin-top: 9px;
+    line-height: 26px;
+    @media (min-width: 500px) {
+      margin-top: 13px;
+    }
+  }
+}
+
+.price-countdown__price {
+  p {
+    color: variables.$primary-2;
+  }
+}
+.price-countdown__countdown {
+  p {
+    color: variables.$primary-1;
+  }
+}
+
+.footer {
+  p {
+    color: variables.$primary-1;
+  }
+  span {
+    color: variables.$neutral-white;
+    &:hover {
+      color: variables.$primary_2;
+    }
+  }
+}

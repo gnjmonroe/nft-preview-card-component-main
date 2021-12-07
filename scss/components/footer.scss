@@ -1,0 +1,21 @@
+@use "../abstracts/variables.scss";
+
+.footer {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 7px;
+
+  img {
+    width: 34px;
+    height: 34px;
+    border: 1px solid variables.$neutral_white;
+    border-radius: 50%;
+  }
+  p {
+    margin-left: 16px;
+    span {
+      color: variables.$neutral_white;
+    }
+  }
+}
